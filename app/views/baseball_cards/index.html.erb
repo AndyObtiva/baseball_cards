@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Baseball cards</h1>
+
+<%= link_to "New baseball card", new_baseball_card_path %>
+
+<div id="baseball_cards">
+  <% @baseball_cards.each do |baseball_card| %>
+    <%= link_to baseball_card do %>
+      <%= render baseball_card, baseball_card: baseball_card %>
+    <% end %>
+  <% end %>
+</div>

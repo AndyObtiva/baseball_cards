@@ -1,0 +1,41 @@
+<%= form_with(model: baseball_card) do |form| %>
+  <% if baseball_card.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(baseball_card.errors.count, "error") %> prohibited this baseball_card from being saved:</h2>
+
+      <ul>
+        <% baseball_card.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= button_tag 'Another Player Image', type: '', id: :update_card_player_image %>
+  </div>
+
+  <div>
+    <%= form.label :team, style: "display: block" %>
+    <%= form.select :team, team_options_for_select(@baseball_card&.team) %>
+  </div>
+
+  <div>
+    <%= form.label :position, style: "display: block" %>
+    <%= form.select :position, BaseballCard::POSITIONS %>
+  </div>
+  
+  <div>
+    <%= form.hidden_field :image_url %>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<br />
+
+<%= render @baseball_card %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<div>
+  <%= link_to "Edit this baseball card", edit_baseball_card_path(@baseball_card) %> |
+  <%= link_to "Back to baseball cards", baseball_cards_path %>
+
+  <%= button_to "Destroy this baseball card", @baseball_card, method: :delete %>
+</div>
+
+<%= render @baseball_card %>

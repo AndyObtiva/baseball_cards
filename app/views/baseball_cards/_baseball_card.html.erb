@@ -1,0 +1,303 @@
+<% baseball_card ||= @baseball_card %>
+
+<div class="card" style="float: left; margin: 10px; position: relative; background-size: cover; width: 200px; height: 300px; background-position-x: center; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); background-image: url(<%= baseball_card&.image_url %>);">
+  <div style="position: absolute; bottom: 0px;">
+    <img id="card_team" src="<%= "https://sportslogosvg.com/wp-content/uploads/2020/09/#{baseball_card&.team&.downcase == 'red sox' ? 'redsox' : baseball_card&.team&.downcase&.sub(' ', '-')}-1200x864.png" %>" height="30" style="display: <%= baseball_card&.team ? 'inline-block' : 'none' %>; vertical-align: middle;" />
+    
+    <span id="card_name" style="display: inline-block; vertical-align: middle; text-align: center; color: white; font-size: 16px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+      <%= baseball_card&.name %>
+    </span>
+    
+    <svg
+       xmlns:dc="http://purl.org/dc/elements/1.1/"
+       xmlns:cc="http://web.resource.org/cc/"
+       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+       xmlns:svg="http://www.w3.org/2000/svg"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+       xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+       height="35"
+       viewBox="0 0 611.73914 511.06744"
+       id="card_position"
+       style="display: <%= baseball_card&.position ? 'inline-block' : 'none' %>; vertical-align: middle;"
+       sodipodi:version="0.32"
+       inkscape:version="0.45.1"
+       version="1.0"
+       sodipodi:docbase="C:\Documents and Settings\Chris\Desktop\baseball"
+       sodipodi:docname="Baseball C.svg"
+       inkscape:output_extension="org.inkscape.output.svg.inkscape">
+      <defs
+         id="defs4">
+        <linearGradient
+           id="linearGradient6183">
+          <stop
+             style="stop-color:#7e4317;stop-opacity:1;"
+             offset="0"
+             id="stop6185" />
+          <stop
+             style="stop-color:#953100;stop-opacity:1;"
+             offset="1"
+             id="stop6187" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient5141">
+          <stop
+             style="stop-color:#ffffff;stop-opacity:1;"
+             offset="1"
+             id="stop5143" />
+          <stop
+             style="stop-color:#ffffff;stop-opacity:0;"
+             offset="1"
+             id="stop5145" />
+        </linearGradient>
+        <radialGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient5141"
+           id="radialGradient5147"
+           cx="408.7468"
+           cy="-181.38609"
+           fx="408.7468"
+           fy="-181.38609"
+           r="306.80814"
+           gradientTransform="matrix(0.1303747,0.4367551,-1.3559209,0.404753,-20.407009,433.33976)"
+           gradientUnits="userSpaceOnUse" />
+        <radialGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient5141"
+           id="radialGradient5170"
+           gradientUnits="userSpaceOnUse"
+           gradientTransform="matrix(-0.1020632,0.3143125,-0.2847171,-9.2452958e-2,409.38007,231.54454)"
+           cx="992.91998"
+           cy="429.55511"
+           fx="992.91998"
+           fy="429.55511"
+           r="306.80814" />
+        <radialGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient6183"
+           id="radialGradient6191"
+           cx="528.15991"
+           cy="389.72467"
+           fx="528.15991"
+           fy="389.72467"
+           r="306.91226"
+           gradientTransform="matrix(-0.466682,0.4905325,-0.4878269,-0.46411,806.88847,412.71494)"
+           gradientUnits="userSpaceOnUse" />
+        <radialGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient6183"
+           id="radialGradient13054"
+           gradientUnits="userSpaceOnUse"
+           gradientTransform="matrix(-0.466682,0.4905325,-0.4878269,-0.46411,806.88847,412.71494)"
+           cx="528.15991"
+           cy="389.72467"
+           fx="528.15991"
+           fy="389.72467"
+           r="306.91226" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient6183"
+           id="linearGradient13056"
+           gradientUnits="userSpaceOnUse"
+           x1="319.04822"
+           y1="771.89484"
+           x2="288.61502"
+           y2="646.47705" />
+      </defs>
+      <sodipodi:namedview
+         id="base"
+         pagecolor="#ffffff"
+         bordercolor="#666666"
+         borderopacity="1.0"
+         gridtolerance="10000"
+         guidetolerance="10"
+         objecttolerance="10"
+         inkscape:pageopacity="0.0"
+         inkscape:pageshadow="2"
+         inkscape:zoom="1"
+         inkscape:cx="287.62199"
+         inkscape:cy="295.73785"
+         inkscape:document-units="px"
+         inkscape:current-layer="layer1"
+         inkscape:window-width="1024"
+         inkscape:window-height="721"
+         inkscape:window-x="-4"
+         inkscape:window-y="-4" />
+      <metadata
+         id="metadata7">
+        <rdf:RDF>
+          <cc:Work
+             rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type
+               rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+          </cc:Work>
+        </rdf:RDF>
+      </metadata>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         transform="translate(-74.602823,-339.39469)">
+        <g
+           id="g14033">
+          <g
+             transform="translate(-4,40)"
+             id="g13047">
+            <g
+               id="g10125">
+              <path
+                 transform="matrix(2.5051227,0,0,1.1727609,-111.7863,-106.80524)"
+                 sodipodi:open="true"
+                 sodipodi:end="6.2831853"
+                 sodipodi:start="3.1333741"
+                 d="M 76.00412,469.36483 A 122,122 0 1 1 320,468.36218"
+                 sodipodi:ry="122"
+                 sodipodi:rx="122"
+                 sodipodi:cy="468.36218"
+                 sodipodi:cx="198"
+                 id="path5135"
+                 style="fill:url(#radialGradient13054);fill-opacity:1;fill-rule:evenodd;stroke:#010000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                 sodipodi:type="arc" />
+              <path
+                 transform="matrix(5.8551503,0,0,3.3940826,-1489.0661,-1875.1041)"
+                 d="M 320,772.66144 L 293.88965,727.437 L 267.77931,682.21256 L 320,682.21255 L 372.22069,682.21255 L 346.11034,727.437 L 320,772.66144 z "
+                 inkscape:randomized="0"
+                 inkscape:rounded="0"
+                 inkscape:flatsided="false"
+                 sodipodi:arg2="2.6179939"
+                 sodipodi:arg1="1.5707963"
+                 sodipodi:r2="30.14963"
+                 sodipodi:r1="60.299255"
+                 sodipodi:cy="712.36218"
+                 sodipodi:cx="320"
+                 sodipodi:sides="3"
+                 id="path5133"
+                 style="fill:url(#linearGradient13056);fill-opacity:1;fill-rule:evenodd;stroke:#010000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                 sodipodi:type="star" />
+              <rect
+                 transform="matrix(0.7006506,0.7135045,-0.7135045,0.7006506,0,0)"
+                 y="86.912979"
+                 x="638.72125"
+                 height="164.22331"
+                 width="164.22331"
+                 id="rect7192"
+                 style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:4.02508163;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+            </g>
+          </g>
+          <path
+             transform="matrix(0.5974603,0,0,0.5974603,148.07055,602.81434)"
+             d="M 470 263.36218 A 83 83 0 1 1  304,263.36218 A 83 83 0 1 1  470 263.36218 z"
+             sodipodi:ry="83"
+             sodipodi:rx="83"
+             sodipodi:cy="263.36218"
+             sodipodi:cx="387"
+             id="path13062"
+             style="fill:#833e11;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.05200005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             sodipodi:type="arc" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:56px;font-style:normal;font-weight:normal;fill:<%= baseball_card&.position == '1st Base' ? 'yellow' : 'transparent' %>;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+           x="459.22034"
+           y="641.42615"
+           id="text-1st-base"><tspan
+             sodipodi:role="line"
+             id="text14046"
+             x="459.22034"
+             y="641.42615">1B</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:56px;font-style:normal;font-weight:normal;fill:<%= baseball_card&.position == '2nd Base' ? 'yellow' : 'transparent' %>;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+           x="417.87878"
+           y="554.88501"
+           id="text-2nd-base"><tspan
+             sodipodi:role="line"
+             id="tspan14056"
+             x="417.87878"
+             y="554.88501">2B</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:56px;font-style:normal;font-weight:normal;fill:<%= baseball_card&.position == '3rd Base' ? 'yellow' : 'transparent' %>;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+           x="230.89096"
+           y="641.27338"
+           id="text-3rd-base"><tspan
+             sodipodi:role="line"
+             id="text14058"
+             x="230.89096"
+             y="641.27338">3B</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:56px;font-style:normal;font-weight:normal;fill:<%= baseball_card&.position == 'Shortstop' ? 'yellow' : 'transparent' %>;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+           x="273.08279"
+           y="554.52954"
+           id="text-shortstop"><tspan
+             sodipodi:role="line"
+             id="tspan14064"
+             x="273.08279"
+             y="554.52954">SS</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:56px;font-style:normal;font-weight:normal;fill:<%= baseball_card&.position == 'Right Field' ? 'yellow' : 'transparent' %>;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+           x="562.85089"
+           y="455.53461"
+           id="text-right-field"><tspan
+             sodipodi:role="line"
+             id="text14066"
+             x="562.85089"
+             y="455.53461">RF</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:56px;font-style:normal;font-weight:normal;fill:<%= baseball_card&.position == 'Left Field' ? 'yellow' : 'transparent' %>;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+           x="119.05273"
+           y="454.13171"
+           id="text-left-field"><tspan
+             sodipodi:role="line"
+             id="text14074"
+             x="119.05273"
+             y="454.13171">LF</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:56px;font-style:normal;font-weight:normal;fill:<%= baseball_card&.position == 'Center Field' ? 'yellow' : 'transparent' %>;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+           x="344.05273"
+           y="394.13171"
+           id="text-center-field"><tspan
+             sodipodi:role="line"
+             id="text14078"
+             x="344.05273"
+             y="394.13171">CF</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:56px;font-style:normal;font-weight:normal;fill:<%= baseball_card&.position == 'Catcher' ? 'yellow' : 'transparent' %>;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+           x="360.05273"
+           y="786.13171"
+           id="text-catcher"><tspan
+             sodipodi:role="line"
+             id="text14082"
+             x="360.05273"
+             y="786.13171">C</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:56px;font-style:normal;font-weight:normal;fill:<%= baseball_card&.position == 'Pitcher' ? 'yellow' : 'transparent' %>;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial"
+           x="367.49219"
+           y="676.40515"
+           id="text-pitcher"><tspan
+             sodipodi:role="line"
+             id="text14086"
+             x="367.49219"
+             y="676.40515">P</tspan></text>
+        <path
+           sodipodi:type="arc"
+           style="opacity:0.31111115;fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.05200005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path14108"
+           sodipodi:cx="281.5"
+           sodipodi:cy="150.56744"
+           sodipodi:rx="45.5"
+           sodipodi:ry="45.5"
+           d="M 327 150.56744 A 45.5 45.5 0 1 1  236,150.56744 A 45.5 45.5 0 1 1  327 150.56744 z"
+           transform="translate(98.60282,611.39469)" />
+      </g>
+    </svg>
+  </div>
+</div>
