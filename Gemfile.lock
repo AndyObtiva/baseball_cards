@@ -136,6 +136,8 @@ GEM
     opal (1.4.0)
       ast (>= 2.3.0)
       parser (~> 3.0, >= 3.0.3.2)
+    opal-jquery (0.4.6)
+      opal (>= 0.10.0, < 2.0)
     opal-rails (2.0.2)
       opal (~> 1.0)
       opal-sprockets (~> 1.0)
@@ -234,6 +236,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  opal-jquery
   opal-rails
   puma (~> 5.0)
   rails (~> 7.0.1)
