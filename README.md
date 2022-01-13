@@ -1,24 +1,14 @@
-# README
+# Baseball Cards
+## Opal Ruby on Rails 7 Advanced Example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Learn more at this blog post:
 
-Things you may want to cover:
+https://andymaleh.blogspot.com/2022/01/using-opal-ruby-with-rails-7.html
 
-* Ruby version
+![Baseball Cards](https://blogger.googleusercontent.com/img/a/AVvXsEieEeKAiud6COVyGWTpwAzk9OJKK54sJA17vMlom5Tc3tS3wrSMG3jML8PR_FeD-dtLmbxZJi6dkfeOAQCerrKQsSZaZn5U2K_xVUNjQPrLMoE8zTB8RTfmbJC7pcMvh5ZLJYiwgNZTug--nPAWIauJv4hyagwZjzPwC3-uS6AD9eQtkCKYaQ=s16000)
 
-* System dependencies
+## License
 
-* Configuration
+[MIT](LICENSE.txt)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Copyright (c) 2022 Andy Maleh.
