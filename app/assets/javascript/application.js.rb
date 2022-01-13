@@ -6,7 +6,7 @@ require 'opal-jquery'
 card_image_updater = proc do
   name_input = Element['#baseball_card_name']
   if !name_input.val.empty?
-    url = "http://api.giphy.com/v1/gifs/search?q=#{name_input.value}&limit=20&api_key=fM6ptBz7qPw79xrXOagWvHiPzRBSQK7f"
+    url = "https://api.giphy.com/v1/gifs/search?q=#{name_input.value}&limit=20&api_key=fM6ptBz7qPw79xrXOagWvHiPzRBSQK7f"
     HTTP.get(url) do |response|
       if response.ok?
         response_hash = response.json
